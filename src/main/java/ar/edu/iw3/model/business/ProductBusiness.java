@@ -87,11 +87,6 @@ public class ProductBusiness implements IProductBusiness {
 		}
 	}
 
-	// 1 Arroz 189 true
-	// 2 Leche 50 true
-
-	// 1 Leche 190 true <-- esto no puede ocurrir!!!!!!
-
 	@Override
 	public Product update(Product product) throws NotFoundException, BusinessException, FoundException {
 		load(product.getId());
